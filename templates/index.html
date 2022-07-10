@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 app</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Sector comparison between Lewis and Perez</h1>
+
+    <div class="container">
+      <div class="card-carousel">
+        <div class="card" id="1">
+          <div class="image-container"></div>
+          <button class="favorite styled" type="button">Silverstone</button>
+        </div>
+        <div class="card" id="2">
+          <div class="image-container"></div>
+          <button class="favorite styled" type="button">Austria</button>
+        </div>
+        <div class="card" id="3">
+          <div class="image-container"></div>
+          <button class="favorite styled" type="button">Bahrain</button>
+        </div>
+        <div class="card" id="4">
+          <div class="image-container"></div>
+          <button class="favorite styled" type="button">Imola</button>
+        </div>
+        <div class="card" id="5">
+          <div class="image-container"></div>
+          <button class="favorite styled" type="button">Monaco</button>
+        </div>
+      </div>
+      <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+    </div>
+  </body>
+  <script src="{{url_for('static', filename='script.js')}}"></script>
+</html>
