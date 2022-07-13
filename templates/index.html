@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>F1 app</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.9.0/brython.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.9.0/brython_stdlib.min.js">
-    </script>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='style.css') }}"
@@ -48,10 +44,7 @@
       </div>
       <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
     </div>
+    <iframe width="400" height="400" src="http://10.33.75.112:8888/notebooks/Desktop/Tool/test.ipynb"/>
   </body>
-
   <script src="{{url_for('static', filename='script.js')}}"></script>
-  <script src="{{url_for('static', filename='brython.js')}}"></script>
-  <script src="{{url_for('static', filename='brython_stdlib.js.js')}}"></script>
-  <script type=”text/python” src=”.py”></script>
 </html>
